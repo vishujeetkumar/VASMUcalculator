@@ -5,86 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <style>
-        h1 {
-            font-family: cursive;
-            color: whitesmoke;
-        }
-
-        p {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-        }
-
-        input {
-            background-color: beige;
-            padding: 3px;
-            border-radius: 5px;
-        }
-
-        button {
-            border-radius: 15px;
-            padding: 3px;
-            background-color: aquamarine;
-            font-weight: bold;
-            font-family: monospace;
-            margin-left: 30%;
-
-        }
-
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-image: url(https://imgs.search.brave.com/RgtoE23fUEzSAlyMwYpfwSt1U1qdnQISZ0oExd2XShc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/bWFnbmlmaWMuY29t/L3ByZW1pdW0tcGhv/dG8vZGlnaXRhbC1j/YWxjdWxhdG9yLWFi/c3RyYWN0LWJsdWUt/dGVjaG5vbG9neS1i/YWNrZ3JvdW5kLWNv/bmNlcHQtbWF0aGVt/YXRpY3MtY2FsY3Vs/YXRpb25fMTA2NjI1/MC0xMTY2Ni5qcGc_/c2VtdD1haXNfaHli/cmlkJnc9NzQwJnE9/ODA);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        #box {
-            border: 2px solid lightblue;
-            border-radius: 5px;
-            padding: 15px;
-            background-color: rgba(181, 221, 235, 0.5);
-        }
-    
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- //html  -->
-    <div id="box">
-        <h1>CALCULATOR</h1>
-        <!-------input--->
-        <p> Lenght: <input type="number" id="lenght"></p>
-        <p>Width: <input type="number" id="width"></p>
-        <button onclick="showResult()">Calculate</button>
-        <!-------output------->
-        <div id="output"></div>
+    <div id="bg">
+        <div id="box">
+            <h1>CALCULATOR</h1>
+            <!-------input--->
+            <p> Lenght: <input type="number" id="lenght"></p>
+            <p>Width: <input type="number" id="width"></p>
+            <button onclick="showResult()">Calculate</button>
+            <!-------output------->
+            <div id="output"></div>
+        </div>
     </div>
-
 
     <!-- //js -->
 
+    <script src="script.js"></script>
 
-    <script>
-        function showResult() {
-            let lenght = Number(document.getElementById("lenght").value);
-            let width = Number(document.getElementById("width").value);
-            let area = (lenght * width);
-            let perimeter = 2 * (lenght + width)
-
-            //output in fronted
-            document.getElementById("output").innerHTML =
-                "--------------------------------------------" + "<br>" +
-                "                 Answer                     " + "<br>" +
-                "--------------------------------------------" + "<br>" +
-                "       Area         : " + area + "<br>" +
-                "       perimeter    : " + perimeter
-            "--------------------------------------------"
-        }
-    </script>
 </body>
 
 </html>
