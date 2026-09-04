@@ -1,31 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <!-- //html  -->
-    <div id="bg">
-        <div id="box">
-            <h1>CALCULATOR</h1>
-            <!-------input--->
-            <p> Lenght: <input type="number" id="lenght" min="0"></p>
-            <p>Width: <input type="number" id="width" min="0"></p>
-            <button onclick="showResult()">Calculate</button>
-            <!-------output------->
-            <div id="output"></div>
+ <div class="calculator-card">
+        <h2>Calculator</h2>
+        <div class="input-group">
+            <input type="number" placeholder="Enter Num1" id="num1">
+            <input type="number" placeholder="Enter Num2" id="num2">
+            <select id="operator">
+                <option value="+">Add (+)</option>
+                <option value="-">Subtract (-)</option>
+                <option value="*">Multiply (×)</option>
+                <option value="/">Divide (÷)</option>
+                <option value="%">Modulo (%)</option>
+                <option value="**">Power (^)</option>
+                <option Value="Area">Area of rectangle</option>
+                <option value="Perimeter">Perimeter of rectangle</option>
+            </select>
+            <input type="submit" value="Calculate" id="calculate">
+        </div>
+        <div class="result-box">
+            <strong>Result: </strong><output id="result">-</output>
+        </div>
+        <div>
+            <p>Developed By vishujeet</p>
         </div>
     </div>
-
-    <!-- //js -->
-
-    <script src="script.js"></script>
-
-</body>
-
-</html>
