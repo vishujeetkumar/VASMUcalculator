@@ -1,50 +1,90 @@
- h1 {
-     font-family: cursive;
-     color: whitesmoke;
- }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
- p {
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
+        .calculator-card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 320px;
+        }
 
- }
+        h2 {
+            color: #1a73e8;
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 30px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 900;
 
- input {
-     background-color: beige;
-     padding: 3px;
-     border-radius: 5px;
- }
+        }
 
- button {
-     border-radius: 15px;
-     padding: 3px;
-     background-color: aquamarine;
-     font-weight: bold;
-     font-family: monospace;
-     margin-left: 30%;
+        p {
+            font-family: Courier, monospace;
+            font-size: 15px;
+        }
 
- }
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
 
- body {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     height: 100vh;
-     background-image: url(https://imgs.search.brave.com/RgtoE23fUEzSAlyMwYpfwSt1U1qdnQISZ0oExd2XShc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/bWFnbmlmaWMuY29t/L3ByZW1pdW0tcGhv/dG8vZGlnaXRhbC1j/YWxjdWxhdG9yLWFi/c3RyYWN0LWJsdWUt/dGVjaG5vbG9neS1i/YWNrZ3JvdW5kLWNv/bmNlcHQtbWF0aGVt/YXRpY3MtY2FsY3Vs/YXRpb25fMTA2NjI1/MC0xMTY2Ni5qcGc_/c2VtdD1haXNfaHli/cmlkJnc9NzQwJnE9/ODA);
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-color: rgba(218, 231, 235, 0.5);
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            background-color: #f8f9fa;
+            font-size: 14px;
+            box-sizing: border-box;
+            transition: border-color 0.2s;
+        }
 
- }
+        input[type="number"]:focus,
+        select:focus {
+            outline: none;
+            border-color: #1a73e8;
+            background-color: #fff;
+        }
 
- #bg {
-     background-color: rgba(37, 181, 220, 0.5);
-     padding: 36vh 41.2vw;
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            background-color: #196ad4;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
 
- }
+        input[type="submit"]:hover {
+            background-color: #1557b0;
+        }
 
- #box {
-     border: 2px solid lightblue;
-     border-radius: 5px;
-     padding: 15px;
-     background-color: rgba(181, 221, 235, 0.5);
- }
+        .result-box {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 18px;
+            color: #464444;
+            background: #d3e3fd;
+            padding: 10px;
+            border-radius: 6px;
+        }
+
+        output {
+            font-weight: bold;
+            color: #136cdf;
+        }
