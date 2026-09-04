@@ -38,10 +38,7 @@ I kept this project super lightweight by putting everything into a single file u
 
 ---
 
-## 👨‍💻 Developed By
- __     __  ___   ____   _   _   _   _       _  _____ _____ _____ 
- \ \   / / |_ _| / ___| | | | | | | | |     | || ____| ____|_   _|
-  \ \ / /   | |  \___ \ | |_| | | | | |  _  | ||  _|  |  _|   | |  
-   \ V /    | |   ___) ||  _  | | |_| | | |_| || |___ | |___  | |  
-    \_/    |___| |____/ |_| |_|  \___/   \___/ |_____|_____| |_|  
+## 👨‍💻 Author
+
+Developed with ❤️ by **vishujeet**
                             (VISHUJEET KUMAR)
