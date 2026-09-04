@@ -32,7 +32,7 @@ I kept this project super lightweight by putting everything into a single file u
 ## 💻 Running It on Your Machine
 
 1. Grab the code or download the files.
-2. Find `index.html`. 
+2. Find calculator.html. 
 3. Open it up using Google Chrome, Safari, Firefox, or Edge.
 4. Type in your numbers, pick your operator, and hit **Calculate**!
 
